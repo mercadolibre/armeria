@@ -354,7 +354,7 @@ public interface AggregatedHttpMessage {
                 if (headers.contains(CONTENT_LENGTH)) {
                     headers.setInt(CONTENT_LENGTH, 0);
                 } else {
-                    headers.add(CONTENT_LENGTH, 0);
+                    headers.addInt(CONTENT_LENGTH, 0);
                 }
             } else {
                 headers.setInt(CONTENT_LENGTH, content.length());
