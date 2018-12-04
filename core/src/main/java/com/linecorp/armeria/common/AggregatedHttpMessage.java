@@ -351,7 +351,7 @@ public interface AggregatedHttpMessage {
             }
         } else { // Request
             if (content.isEmpty()) {
-                headers.remove(CONTENT_LENGTH);
+                headers.remove(CONTENT_LENGTH, 0);
             } else {
                 headers.setInt(CONTENT_LENGTH, content.length());
             }
